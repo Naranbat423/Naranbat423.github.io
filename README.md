@@ -1,2 +1,2 @@
-# naranbat423.github.io
+# Naranbat423.github.io
 my first webste
