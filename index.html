@@ -1,42 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noah — Frontend Engineer</title>
+  <meta name="description" content="Noah — Web/UI Designer portfolio with a responsive hero background video and accessible design." />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, 
-    initial-scale=1.0">
-    <title>Noah - Frontend Engineer</title> 
-    <meta name="description" content="A basic web page 
-    containing some text from A Tale of Two Cities, a 
-    novel published in 1859 by English author Charles 
-    Dickens.">
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="assets/css/global.css">
+  <style>
+    :root{
+      --bg:#0f1724;
+      --muted:#94a3b8;
+      --accent:#7c3aed;
+      color-scheme:dark;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;background:var(--bg);color:#fff;overflow-x:hidden;}
+
+    header{
+      position:relative;
+      width:100%;
+      height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+    }
+
+    /* Background video */
+    .hero-bg video{
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      z-index:-1;
+    }
+
+    .hero-text{
+      position:relative;
+      z-index:2;
+      background:rgba(0,0,0,0.4);
+      padding:2rem 3rem;
+      border-radius:1rem;
+      backdrop-filter:blur(6px);
+    }
+
+    h1{font-size:clamp(2rem,4vw,3.5rem);margin-bottom:0.5rem;}
+    h2{font-weight:400;color:var(--muted);margin-bottom:1.2rem;}
+
+    nav.links{
+      margin-top:1.5rem;
+      display:flex;
+      flex-wrap:wrap;
+      gap:0.6rem;
+      justify-content:center;
+    }
+
+    nav.links a{
+      text-decoration:none;
+      color:#fff;
+      background:rgba(255,255,255,0.15);
+      padding:0.5rem 0.8rem;
+      border-radius:0.5rem;
+      transition:background 0.2s ease;
+    }
+
+    nav.links a:hover{background:var(--accent);}
+
+    main{
+      padding:2rem;
+      text-align:center;
+      background:#0b1220;
+    }
+
+    a.cta{
+      display:inline-block;
+      margin-top:1.5rem;
+      padding:0.7rem 1.2rem;
+      border-radius:0.5rem;
+      background:linear-gradient(90deg,var(--accent),#5b21b6);
+      color:#fff;
+      text-decoration:none;
+      font-weight:600;
+    }
+  </style>
 </head>
+<body>
+  <header>
+    <div class="hero-bg">
+      <video autoplay muted loop playsinline preload="auto" poster="assets/img/developer.jpg">
+        <source src="assets/video/hero-video.mp4" type="video/mp4">
+        <source src="assets/video/hero-video.webm" type="video/webm">
+        <!-- Fallback -->
+        <img src="assets/img/developer.jpg" alt="Noah — Web Designer">
+      </video>
+    </div>
 
+    <div class="hero-text">
+      <h1>Hi, I'm Noah</h1>
+      <h2>Web/UI Designer</h2>
+      <p>I design clean, responsive interfaces with accessibility and style in mind.</p>
 
-<body> 
-    
-        <header>
-<h1> Hi , i am Noah </h1>
-        
-        
-<h2> Web/UI Designer </h2>
-<img src="assets/img/developer.jpg" alt="Noah :Web Designer">
-    </header>
-    <section>
-<p><a href="exercises/page-1.html">A Tale of Two Cities</a></p>
-<p><a href="exercises/page-2.html">Purple Rain</a></p>
+      <nav class="links" aria-label="Examples">
+        <a href="exercises/page-1.html">A Tale of Two Cities</a>
+        <a href="exercises/page-2.html">Purple Rain</a>
+        <a href="exercises/page-3.html">Web Page with Sections</a>
+        <a href="exercises/page-4.html">Vincent van Gogh</a>
+        <a href="exercises/page-5.html">Irish Tourism</a>
+        <a href="exercises/hero-text.html">Hero with animated text</a>
+        <a href="exercises/hero-image.html">Hero with background image</a>
+        <a href="exercises/hero-video.html">Hero with background video</a>
+      </nav>
 
-<p><a href="exercises/page-3.html">Web Page with Sections</a></p>
+      <a class="cta" href="#contact">Get in touch</a>
+    </div>
+  </header>
 
-<p><a href="exercises/page-4.html">Vincent van Gogh</a></p> 
-<p><a href="exercises/page-5.html">Irish Tourism</a></p>
-
-<p><a href="exercises/hero-text.html">Hero block with animated text</a></p> 
-<p><a href="exercises/hero-image.html">Hero block with background image</a></p> 
-<p><a href="exercises/hero-video.html">Hero block with background video</a></p> 
+  <main>
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:78577@student.dorset-college.ie">78577@student.dorset-college.ie</a></p>
     </section>
+  </main>
 </body>
 </html>
