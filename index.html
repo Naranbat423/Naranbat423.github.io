@@ -1,142 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Naranbat Enkhbold - 78577 -->
-
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Noah — Frontend Engineer</title>
-  <meta name="description" content="Noah — Web/UI Designer portfolio with a responsive hero background video and accessible design." />
+  <!-- Begin Inspectlet Asynchronous Code -->
+<script type="text/javascript">
+  (function() {
+  window.__insp = window.__insp || [];
+  __insp.push(['wid', 482963329]);
+  var ldinsp = function(){
+  if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=482963329&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+  setTimeout(ldinsp, 0);
+  })();
+  </script>
+  <!-- End Inspectlet Asynchronous Code -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mary Smith | Web Designer and Developer</title>
+    <meta name="description" content="I create digital experiences to promote products, services, and events.">
 
-  <!-- Google font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<!-- Preload large image -->
 
-  <style>
-    :root{
-      --bg:#0f1724;
-      --muted:#94a3b8;
-      --accent:#7c3aed;
-      color-scheme:dark;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;background:var(--bg);color:#fff;overflow-x:hidden;}
+	<!-- Stylesheets -->
+    <link rel="stylesheet" href="https://lunevedy.com/assets/2.0/css/lunevedy.min.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
 
-    header{
-      position:relative;
-      width:100%;
-      height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-    }
+	<!-- Google Fonts -->
 
-    /* Background video */
-    .hero-bg video{
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      z-index:-1;
-    }
+    <!-- Font Awesome 6 icons. Delete if not using. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    .hero-text{
-      position:relative;
-      z-index:2;
-      background:rgba(0,0,0,0.4);
-      padding:2rem 3rem;
-      border-radius:1rem;
-      backdrop-filter:blur(6px);
-    }
+    <style>
+        header .col-text h2 { line-height: 1.8 }
+        .col-1 > h3 { line-height: 1.8 } 
+    </style>
 
-    h1{font-size:clamp(2rem,4vw,3.5rem);margin-bottom:0.5rem;}
-    h2{font-weight:400;color:var(--muted);margin-bottom:1.2rem;}
-
-    nav.links{
-      margin-top:1.5rem;
-      display:flex;
-      flex-wrap:wrap;
-      gap:0.6rem;
-      justify-content:center;
-    }
-
-    nav.links a{
-      text-decoration:none;
-      color:#fff;
-      background:rgba(255,255,255,0.15);
-      padding:0.5rem 0.8rem;
-      border-radius:0.5rem;
-      transition:background 0.2s ease;
-    }
-
-    nav.links a:hover{background:var(--accent);}
-
-    main{
-      padding:2rem;
-      text-align:center;
-      background:#0b1220;
-    }
-
-    a.cta{
-      display:inline-block;
-      margin-top:1.5rem;
-      padding:0.7rem 1.2rem;
-      border-radius:0.5rem;
-      background:linear-gradient(90deg,var(--accent),#5b21b6);
-      color:#fff;
-      text-decoration:none;
-      font-weight:600;
-    }
-  </style>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8YKPYEJHYC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8YKPYEJHYC');
-</script>
 </head>
+
+
 <body>
-  <header>
-    <div class="hero-bg">
-      <video autoplay muted loop playsinline preload="auto" poster="assets/img/developer.jpg">
-        <source src="assets/video/hero-video.mp4" type="video/mp4">
-        <source src="assets/video/hero-video.webm" type="video/webm">
-        <!-- Fallback -->
-        <img src="assets/img/developer.jpg" alt="Noah — Web Designer">
-      </video>
-    </div>
 
-    <div class="hero-text">
-      <h1>Hi, I'm Noah</h1>
-      <h2>Web/UI Designer</h2>
-      <p>I design clean, responsive interfaces with accessibility and style in mind.</p>
+    <!-- menu and 'hero block' header -->
+    <nav class="theme-dark"><div class="container-menu">
+        <a href="#" class="brand">
+            <img src="assets/img/website-logo-sample.png" alt="Sample website logo">
+        </a>
+    
+        <div class="container-menu-links">
+    
+            <div class="nav-toggle" id="nav-toggle-btn">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+    
+            <ul class="links-wrapper">
+                <li><a href="#">Home</a></li>
+                <li><a href="portfolio/index.html">Portfolio</a></li>
+                <li><a href="store/index.html">Store</a></li>
+                <li><a class="btn btn-solid btn-soft" id="btn-cta" href="contact/index.html"><span>Contact</span> <i class="fa-regular fa-envelope"></i></a></li>
+            </ul>
+        </div></div></nav>
+    
+           <!-- header starts here -->
+    
+        <header class="theme-dark cols-2-half text-center-mobile">
+    
+            <div class="col-2 col-text">
+                <div class="badge">WELCOME</div>
+                <h1>Mary Smith</h1>
+                <h2>I am an innovative front-end developer who loves to build human-friendly interfaces.</h2>
+    
+                <div class="container-btn">
+                    <a href="portfolio/index.html" class="btn btn-solid btn-soft"><span>View my work</span><i class="fa-regular fa-folder-open"></i></a><a href="contact/index.html" class="btn btn-outline btn-soft"><span>Get in touch</span><i class="fa-regular fa-envelope"></i></a>
+                </div>
+    
+            </div>
+    
+            <div class="col-2 col-visual">
+                <figure>
+                    <img src="https://lunevedy.com/ui/assets/img/1024x618-shopping-bag.jpg" alt="Placeholder image">
+                </figure>
+            </div>
+    
+        </header>
+    
+    
+        <!-- header ends here -->
+    
+    <!-- main content with sections -->
+    <main>
 
-      <nav class="links" aria-label="Examples">
-        <a href="exercises/page-1.html">A Tale of Two Cities</a>
-        <a href="exercises/page-2.html">Purple Rain</a>
-        <a href="exercises/page-3.html">Web Page with Sections</a>
-        <a href="exercises/page-4.html">Vincent van Gogh</a>
-        <a href="exercises/page-5.html">Irish Tourism</a>
-        <a href="exercises/hero-text.html">Hero with animated text</a>
-        <a href="exercises/hero-image.html">Hero with background image</a>
-        <a href="exercises/hero-video.html">Hero with background video</a>
-      </nav>
+	<!-- section starts here -->
 
-      <a class="cta" href="#contact">Get in touch</a>
-    </div>
-  </header>
+    <section class="theme-dark section-selector-1 w-1356px">
 
-  <main>
-    <section id="contact">
-      <h3>Contact</h3>
-      <p>Email: <a href="mailto:78577@student.dorset-college.ie">78577@student.dorset-college.ie</a></p>
-    </section>
-  </main>
+		<div class="col-1 text-center w-820px">
+			<h2>Recent projects</h2>
+			<h3>Below you can see some examples of my recent work. Check out my complete portfolio of <a href="portfolio/index.html">web design</a> projects. Have a project you would like to discuss? <a href="contact/index.html">Let's make something great together!</a> </h3>
+		</div>
+
+		<!-- Begin three-column flexbox grid -->
+		<div class="flex-cols-3 cols-gap-4">
+
+			<div class="col-3">
+				<figure class="photos-zoom photos-brightness" style="overflow: hidden;">
+					<a href="portfolio/fashion/index.html"><img src="assets/img/project-fashion.jpg" alt="Fashion retailer project"></a>
+				</figure>
+				<h3>Snazzy Fashion</h3>
+				<p>A web page for a fashion retailer with a background video that plays in a continuous loop.</p>
+				<a href="portfolio/fashion/index.html" class="btn btn-solid btn-soft"><span>View project</span><i class="fas fa-arrow-right"></i></a>
+			</div>
+
+
+			<div class="col-3">
+				<figure class="photos-zoom photos-brightness" style="overflow: hidden;">
+					<a href="portfolio/smoothies/index.html"><img src="assets/img/project-smoothie.jpg" alt="Placeholder image"></a>
+				</figure>
+				<h3>Smooth Smoothies</h3>
+				<p>A multi-column, flexbox-based page layout and hero image with a tinted overlay.</p>
+				<a href="portfolio/smoothies/index.html" class="btn btn-solid btn-soft"><span>View project</span><i class="fas fa-arrow-right"></i></a>
+			</div>
+
+            <div class="col-3">
+				<figure class="photos-zoom photos-brightness" style="overflow: hidden;">
+					<a href="portfolio/crypto-wallet/index.html"><img src="assets/img/project-crypto-wallet.jpg" alt="Placeholder image"></a>
+				</figure>
+				<h3>Crypto Wallet</h3>
+				<p> A dark-themed responsive single-page website for a fictitious crypto wallet.</p>
+				<a href="portfolio/crypto-wallet/index.html" class="btn btn-solid btn-soft"><span>View project</span><i class="fas fa-arrow-right"></i></a>
+			</div>
+
+		</div>
+		<!-- End three-column flexbox grid -->
+
+	</section>
+
+	<!-- section ends here -->
+
+    </main>
+
+    <!-- footer -->
+ 
+	<footer class="theme-dark text-center-desktop text-center-mobile">
+
+		<h2>Mary Smith</h2>
+
+		<h3>Front-end designer and developer</h3>
+
+		<ul class="footer-links">
+			<li><a href="#">Home</a></li>
+			<li><a href="portfolio/index.html">Portfolio</a></li>
+			<li><a href="store/index.html">Store</a></li>
+            <li><a href="contact/index.html">Contact</a></li>
+		</ul>
+
+		<ul class="footer-icons">
+			<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fab fa-github-square"></i></a></li>
+		</ul>
+
+		<p class="privacy"><a href="privacy.html">Privacy &amp; Legal</a></p>
+
+	</footer>
+
+    <script src="https://lunevedy.com/assets/js/lunevedy.js"></script>
+
 </body>
 </html>
+
