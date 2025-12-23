@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Documentation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .focus-ring:focus {
+      outline: 3px solid rgba(99,102,241,0.25);
+      outline-offset: 2px;
+    }
+    /* Smooth scrolling for anchor links */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+  <!-- Header -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+      <h1 class="text-xl font-bold text-slate-900">Project Documentation</h1>
+      <a href="#" class="px-4 py-2 rounded-md bg-indigo-600 text-white text-sm font-semibold hover:bg-indigo-700 focus-ring flex items-center gap-2">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.234c-3.338.724-4.033-1.61-4.033-1.61-.546-1.386-1.333-1.756-1.333-1.756-1.09-.744.083-.729.083-.729 1.204.084 1.838 1.237 1.838 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.776.418-1.305.762-1.605-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.47-2.38 1.236-3.22-.124-.303-.536-1.524.116-3.176 0 0 1.008-.322 3.3 1.23a11.53 11.53 0 013.003-.403c1.02.004 2.045.138 3.003.404 2.29-1.553 3.296-1.23 3.296-1.23.653 1.653.242 2.874.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.623-5.479 5.921.43.372.813 1.104.813 2.225v3.296c0 .32.216.694.825.576C20.565 21.796 24 17.296 24 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+        Edit on GitHub
+      </a>
+    </div>
+  </header>
+
+  <!-- Layout -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 grid grid-cols-1 lg:grid-cols-4 gap-8">
+
+    <!-- Sidebar -->
+    <nav class="hidden lg:block sticky top-24 h-[calc(100vh-6rem)] overflow-auto border-r border-slate-200 pr-4">
+      <ul class="space-y-2">
+        <li><a href="#introduction" class="block px-3 py-2 rounded-md hover:bg-indigo-50 hover:text-indigo-700 focus-ring">Introduction</a></li>
+        <li><a href="#installation" class="block px-3 py-2 rounded-md hover:bg-indigo-50 hover:text-indigo-700 focus-ring">Installation</a></li>
+        <li><a href="#usage" class="block px-3 py-2 rounded-md hover:bg-indigo-50 hover:text-indigo-700 focus-ring">Usage</a></li>
+        <li><a href="#api" class="block px-3 py-2 rounded-md hover:bg-indigo-50 hover:text-indigo-700 focus-ring">API Reference</a></li>
+        <li><a href="#examples" class="block px-3 py-2 rounded-md hover:bg-indigo-50 hover:text-indigo-700 focus-ring">Examples</a></li>
+        <li><a href="#faq" class="block px-3 py-2 rounded-md hover:bg-indigo-50 hover:text-indigo-700 focus-ring">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main class="lg:col-span-3 prose max-w-prose mx-auto lg:mx-0 space-y-8">
+
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Welcome to the project documentation. This documentation guides you through setup, usage, API reference, and practical examples.</p>
+      </section>
+
+      <section id="installation">
+        <h2>Installation</h2>
+        <p>Follow these steps to install the project locally.</p>
+        <pre><code class="language-bash">npm install project-name</code></pre>
+      </section>
+
+      <section id="usage">
+        <h2>Usage</h2>
+        <p>Basic usage examples of the project:</p>
+        <pre><code class="language-js">import { feature } from 'project-name';
+feature();</code></pre>
+      </section>
+
+      <section id="api">
+        <h2>API Reference</h2>
+        <p>Detailed API methods and properties:</p>
+        <ul>
+          <li><strong>feature()</strong>: Executes the main functionality.</li>
+          <li><strong>config(options)</strong>: Configures settings.</li>
+        </ul>
+      </section>
+
+      <section id="examples">
+        <h2>Examples</h2>
+        <p>Here are some working examples demonstrating usage of different features.</p>
+      </section>
+
+      <section id="faq">
+        <h2>FAQ</h2>
+        <p>Frequently asked questions and answers for common issues.</p>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-sm text-slate-500">
+    &copy; 2025 Project Documentation. Built with <span class="text-red-500">&hearts;</span> using Tailwind CSS.
+  </footer>
+</body>
+</html>

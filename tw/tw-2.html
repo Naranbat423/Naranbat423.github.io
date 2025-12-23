@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tech MeetUp — Landing</title>
+  <meta name="description" content="Tech MeetUp — Community-driven tech talks, networking, and workshops." />
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* small additional utilities for nicer focus outlines */
+    .focus-ring:focus {
+      outline: 3px solid rgba(99,102,241,0.25);
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-slate-50">
+  <!-- Skip link -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:block p-2 m-2 rounded-md bg-indigo-600 text-white">Skip to content</a>
+
+  <!-- Sticky header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center gap-4">
+          <a href="#" class="inline-flex items-center gap-2">
+            <svg class="h-8 w-8 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden>
+              <path d="M3 12h18" />
+              <path d="M12 3v18" />
+            </svg>
+            <span class="font-semibold text-lg">Tech MeetUp</span>
+          </a>
+          <nav class="hidden md:flex gap-2 items-center">
+            <a href="#about" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-slate-100 focus-ring">About</a>
+            <a href="#schedule" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-slate-100 focus-ring">Schedule</a>
+            <a href="#speakers" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-slate-100 focus-ring">Speakers</a>
+            <a href="#tickets" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-slate-100 focus-ring">Tickets</a>
+          </nav>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <a href="#register" class="hidden md:inline-block px-4 py-2 rounded-md bg-indigo-600 text-white text-sm font-semibold hover:bg-indigo-700 focus-ring" aria-label="Register for event">Register</a>
+
+          <!-- Mobile menu button -->
+          <button id="mobileMenuBtn" aria-expanded="false" aria-controls="mobileMenu" class="md:hidden p-2 rounded-md focus-ring">
+            <span class="sr-only">Open menu</span>
+            <svg id="menuIcon" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200">
+      <div class="px-4 pt-2 pb-4 space-y-1">
+        <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 focus-ring">About</a>
+        <a href="#schedule" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 focus-ring">Schedule</a>
+        <a href="#speakers" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 focus-ring">Speakers</a>
+        <a href="#tickets" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 focus-ring">Tickets</a>
+        <a href="#register" class="block mt-2 px-3 py-2 rounded-md bg-indigo-600 text-white text-center font-semibold hover:bg-indigo-700 focus-ring">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="relative bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">Join the next <span class="text-indigo-600">Tech MeetUp</span> — Learn, Network, Build.</h1>
+            <p class="mt-4 text-lg text-slate-600">One-day community-driven event with talks, panels, and hands-on workshops covering web, ML, cloud, and developer tooling. Free snacks, great conversations, and new connections.</p>
+
+            <div class="mt-8 flex flex-col sm:flex-row gap-3">
+              <a href="#register" class="inline-flex items-center justify-center px-6 py-3 rounded-md bg-indigo-600 text-white font-semibold text-sm focus-ring hover:bg-indigo-700" role="button">Get Tickets</a>
+              <a href="#schedule" class="inline-flex items-center justify-center px-6 py-3 rounded-md border border-slate-200 text-sm font-medium hover:bg-slate-100 focus-ring">See Schedule</a>
+            </div>
+
+            <p class="mt-6 text-sm text-slate-500">📅 Sat · Dec 6, 2025 · 10:00 — 17:00 · Dublin Tech Hub</p>
+          </div>
+
+          <div class="order-first lg:order-last">
+            <div class="rounded-2xl p-6 bg-gradient-to-br from-indigo-50 to-white border border-slate-100 shadow-sm">
+              <div class="text-sm font-medium text-slate-600">Featured workshop</div>
+              <h3 class="mt-2 font-semibold text-xl">Deploying ML Models in Production</h3>
+              <p class="mt-2 text-sm text-slate-500">Hands-on session showing how to package, test, and deploy a small model to a cloud endpoint.</p>
+
+              <div class="mt-4 flex gap-3">
+                <a href="#register" class="px-4 py-2 rounded-md bg-indigo-600 text-white text-sm font-medium hover:bg-indigo-700 focus-ring">Reserve spot</a>
+                <a href="#speakers" class="px-4 py-2 rounded-md border border-slate-200 text-sm font-medium hover:bg-slate-100 focus-ring">Meet the speaker</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="prose max-w-none">
+        <h2 class="text-2xl font-semibold">About the event</h2>
+        <p class="text-slate-600">Tech MeetUp brings together developers, designers, product folks and students for a day of short talks, practical workshops and networking. Whether you're exploring a new tech stack or building the next big idea, there's something here for you.</p>
+      </div>
+    </section>
+
+    <!-- Schedule -->
+    <section id="schedule" class="bg-white border-t border-b border-slate-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="flex items-center justify-between">
+          <h2 class="text-2xl font-semibold">Schedule</h2>
+          <p class="text-sm text-slate-500">Day timeline · 10:00 — 17:00</p>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Column A -->
+          <div class="space-y-4">
+            <article class="p-4 rounded-lg border border-slate-100 bg-slate-50">
+              <div class="flex items-start justify-between">
+                <div>
+                  <p class="text-sm font-medium">10:00 — 10:30</p>
+                  <h3 class="mt-1 font-semibold">Opening & Welcome</h3>
+                  <p class="mt-1 text-sm text-slate-500">Venue welcome, run of show and lightning intros.</p>
+                </div>
+                <div class="text-xs text-slate-400">Main Hall</div>
+              </div>
+            </article>
+
+            <article class="p-4 rounded-lg border border-slate-100 bg-white">
+              <div class="flex items-start justify-between">
+                <div>
+                  <p class="text-sm font-medium">11:00 — 11:45</p>
+                  <h3 class="mt-1 font-semibold">Talk: Building Resilient APIs</h3>
+                  <p class="mt-1 text-sm text-slate-500">Best practices on observability, testing and CI.</p>
+                </div>
+                <div class="text-xs text-slate-400">Room A</div>
+              </div>
+            </article>
+
+            <article class="p-4 rounded-lg border border-slate-100 bg-slate-50">
+              <div class="flex items-start justify-between">
+                <div>
+                  <p class="text-sm font-medium">12:00 — 12:45</p>
+                  <h3 class="mt-1 font-semibold">Panel: Career Stories</h3>
+                  <p class="mt-1 text-sm text-slate-500">A panel with engineers and founders on career pivots.</p>
+                </div>
+                <div class="text-xs text-slate-400">Main Hall</div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Column B -->
+          <div class="space-y-4">
+            <article class="p-4 rounded-lg border border-slate-100 bg-white">
+              <div class="flex items-start justify-between">
+                <div>
+                  <p class="text-sm font-medium">14:00 — 15:00</p>
+                  <h3 class="mt-1 font-semibold">Workshop: Hands-on with Containers</h3>
+                  <p class="mt-1 text-sm text-slate-500">Intro to containers & local orchestration.</p>
+                </div>
+                <div class="text-xs text-slate-400">Lab</div>
+              </div>
+            </article>
+
+            <article class="p-4 rounded-lg border border-slate-100 bg-slate-50">
+              <div class="flex items-start justify-between">
+                <div>
+                  <p class="text-sm font-medium">15:15 — 16:00</p>
+                  <h3 class="mt-1 font-semibold">Talk: Data Privacy for Developers</h3>
+                  <p class="mt-1 text-sm text-slate-500">Practical steps to design privacy-first features.</p>
+                </div>
+                <div class="text-xs text-slate-400">Room B</div>
+              </div>
+            </article>
+
+            <article class="p-4 rounded-lg border border-slate-100 bg-white">
+              <div class="flex items-start justify-between">
+                <div>
+                  <p class="text-sm font-medium">16:15 — 17:00</p>
+                  <h3 class="mt-1 font-semibold">Closing & Networking</h3>
+                  <p class="mt-1 text-sm text-slate-500">Wrap-up and open networking with refreshments.</p>
+                </div>
+                <div class="text-xs text-slate-400">Main Hall</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Speakers -->
+    <section id="speakers" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="flex items-center justify-between">
+        <h2 class="text-2xl font-semibold">Speakers</h2>
+        <p class="text-sm text-slate-500">Meet the voices behind the talks</p>
+      </div>
+
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Speaker card -->
+        <article class="group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-lg transition-shadow focus-within:shadow-lg">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Speaker portrait" class="w-full h-40 object-cover rounded-xl" />
+          <div class="mt-3">
+            <h3 class="text-base font-semibold">Alex Morgan</h3>
+            <p class="text-sm text-slate-500">Senior Platform Engineer</p>
+            <p class="mt-2 text-sm text-slate-600">Talk: Building Resilient APIs</p>
+
+            <div class="mt-3 flex gap-2">
+              <a href="#" class="inline-flex items-center px-3 py-1.5 rounded-md text-sm border border-slate-200 hover:bg-slate-100 focus-ring">View profile</a>
+              <a href="#" class="inline-flex items-center px-3 py-1.5 rounded-md text-sm bg-indigo-600 text-white hover:bg-indigo-700 focus-ring">Book meeting</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-lg transition-shadow focus-within:shadow-lg">
+          <img src="https://images.unsplash.com/photo-1545996124-1d5b22b4a4a8?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Speaker portrait" class="w-full h-40 object-cover rounded-xl" />
+          <div class="mt-3">
+            <h3 class="text-base font-semibold">Priya Shah</h3>
+            <p class="text-sm text-slate-500">ML Engineer</p>
+            <p class="mt-2 text-sm text-slate-600">Workshop: Deploying ML Models</p>
+
+            <div class="mt-3 flex gap-2">
+              <a href="#" class="inline-flex items-center px-3 py-1.5 rounded-md text-sm border border-slate-200 hover:bg-slate-100 focus-ring">View profile</a>
+              <a href="#" class="inline-flex items-center px-3 py-1.5 rounded-md text-sm bg-indigo-600 text-white hover:bg-indigo-700 focus-ring">Book meeting</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-lg transition-shadow focus-within:shadow-lg">
+          <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Speaker portrait" class="w-full h-40 object-cover rounded-xl" />
+          <div class="mt-3">
+            <h3 class="text-base font-semibold">Daniel O'Neill</h3>
+            <p class="text-sm text-slate-500">DevOps Advocate</p>
+            <p class="mt-2 text-sm text-slate-600">Workshop: Hands-on with Containers</p>
+
+            <div class="mt-3 flex gap-2">
+              <a href="#" class="inline-flex items-center px-3 py-1.5 rounded-md text-sm border border-slate-200 hover:bg-slate-100 focus-ring">View profile</a>
+              <a href="#" class="inline-flex items-center px-3 py-1.5 rounded-md text-sm bg-indigo-600 text-white hover:bg-indigo-700 focus-ring">Book meeting</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-lg transition-shadow focus-within:shadow-lg">
+          <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Speaker portrait" class="w-full h-40 object-cover rounded-xl" />
+          <div class="mt-3">
+            <h3 class="text-base font-semibold">Sara López</h3>
+            <p class="text-sm text-slate-500">Product Designer</p>
+            <p class="mt-2 text-sm text-slate-600">Panel: Career Stories</p>
+
+            <div class="mt-3 flex gap-2">
+              <a href="#" class="inline-flex items-center px-3 py-1.5 rounded-md text-sm border border-slate-200 hover:bg-slate-100 focus-ring">View profile</a>
+              <a href="#" class="inline-flex items-center px-3 py-1.5 rounded-md text-sm bg-indigo-600 text-white hover:bg-indigo-700 focus-ring">Book meeting</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Add more speaker cards as needed -->
+      </div>
+    </section>
+
+    <!-- Tickets / Register CTA -->
+    <section id="tickets" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="rounded-2xl p-6 bg-gradient-to-r from-indigo-50 to-white border border-slate-100 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div>
+          <h3 class="text-lg font-semibold">Ready to join?</h3>
+          <p class="mt-1 text-sm text-slate-600">Reserve your seat — early bird and student tickets available.</p>
+        </div>
+        <div class="flex gap-3">
+          <a id="register" href="#" class="px-5 py-3 rounded-md bg-indigo-600 text-white font-semibold hover:bg-indigo-700 focus-ring">Buy tickets</a>
+          <a href="#" class="px-5 py-3 rounded-md border border-slate-200 hover:bg-slate-100 focus-ring">Contact us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 mt-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-sm text-slate-600">© 2025 Tech MeetUp — Built with ❤️ for the community</div>
+      <div class="flex items-center gap-3">
+        <a href="#" class="p-2 rounded-md hover:bg-slate-100 focus-ring" aria-label="Twitter link">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+            <path d="M19 7.5c.01.14.01.28.01.42 0 4.3-3.27 9.26-9.26 9.26a9.2 9.2 0 01-4.98-1.46c.38.05.76.07 1.16.07 1.53 0 2.94-.52 4.06-1.4a3.27 3.27 0 01-3.05-2.27c.5.08 1.01.08 1.54-.06a3.27 3.27 0 01-2.62-3.21v-.04c.45.25.97.4 1.52.42A3.27 3.27 0 013.7 6.91c0-.7.19-1.35.52-1.9a9.27 9.27 0 006.72 3.41c-.05-.24-.07-.49-.07-.74A3.27 3.27 0 0116.9 4.1a6.5 6.5 0 002.1-.8 3.25 3.25 0 01-1.44 1.79 6.54 6.54 0 001.88-.51 6.99 6.99 0 01-1.63 1.69z" />
+          </svg>
+        </a>
+        <a href="#" class="p-2 rounded-md hover:bg-slate-100 focus-ring" aria-label="GitHub link">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.6-3.37-1.2-3.37-1.2-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0112 6.8c.85.00 1.71.11 2.5.32 1.9-1.29 2.74-1.02 2.74-1.02.56 1.37.21 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48A10.02 10.02 0 0022 12c0-5.52-4.48-10-10-10z" />
+          </svg>
+        </a>
+        <a href="#" class="p-2 rounded-md hover:bg-slate-100 focus-ring" aria-label="LinkedIn link">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+            <path d="M4.98 3.5a2.5 2.5 0 11.02 0zM3 8.98h4v12H3zM14 9c-2.21 0-3.5 1.29-3.5 3.5V21h4v-7.5c0-.83.67-1.5 1.5-1.5S18.5 12.67 18.5 13.5V21h4v-8.5C22.5 9.46 20.54 9 20 9c-2.6 0-4 1.5-6 0z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn.addEventListener('click', () => {
+      const open = mobileBtn.getAttribute('aria-expanded') === 'true';
+      mobileBtn.setAttribute('aria-expanded', String(!open));
+      mobileMenu.classList.toggle('hidden');
+      // toggle icon (simple switch)
+      const menuIcon = document.getElementById('menuIcon');
+      if (!open) {
+        menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />';
+      } else {
+        menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
+      }
+    });
+
+    // small keyboard accessibility improvement: close menu on Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.add('hidden');
+        mobileBtn.setAttribute('aria-expanded', 'false');
+        document.getElementById('menuIcon').innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
+      }
+    });
+  </script>
+</body>
+</html>
