@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>80/20 Guide to JavaScript Fundamentals</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-color: #38bdf8;
+            --accent-hover: #0ea5e9;
+            --border-color: #334155;
+            --code-bg: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            letter-spacing: -0.025em;
+        }
+
+        .intro-text {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+        }
+
+        section, .media-block {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+            padding-bottom: 0.25rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--accent-color);
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: var(--text-secondary);
+        }
+
+        /* Media Elements */
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .video-container {
+            margin-bottom: 2rem;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 12px;
+            background-color: #000;
+        }
+
+        .audio-card {
+            background: rgba(15, 23, 42, 0.5);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        audio {
+            width: 100%;
+            filter: invert(100%) hue-rotate(180deg) brightness(1.5);
+        }
+
+        /* PDF Styling - This was missing */
+        .pdf-container {
+            width: 100%;
+            height: 600px;
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        embed {
+            width: 100%;
+            height: 100%;
+        }
+
+        .download-link {
+            display: block;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Table Styling - This was missing */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background-color: rgba(15, 23, 42, 0.5);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent-color);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+
+        code {
+            background-color: var(--code-bg);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            color: #e2e8f0;
+            font-family: monospace;
+        }
+
+        .highlight-box {
+            background-color: rgba(56, 189, 248, 0.05);
+            border-left: 4px solid var(--accent-color);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>The 80/20 Guide to JavaScript Fundamentals</h1>
+            <p class="intro-text">This document serves as a strategic summary, distilling the core 20% of concepts that unlock 80% of functionality.</p>
+        </header>
+
+        <div class="media-block">
+            <img src="assets/img/unnamed.png" alt="JavaScript Fundamentals Infographic">
+
+            <div class="video-container">
+                <video controls poster="thumbnail.jpg">
+                    <source src="assets/video/JavaScript_Fundamentals.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="audio-card">
+                <h3>Lesson Podcast</h3>
+                <p>Variables and Data Types Overview</p>
+                <audio controls>
+                    <source src="assets/audio/JavaScript_Foundations_Variables_and_Data_Types.m4a" type="audio/mp4">
+                </audio>
+            </div>
+
+            <h3>Project Documentation</h3>
+            <div class="pdf-container">
+                <embed src="assets/pdf/JavaScript_Fundamentals_Setup_and_Storage.pdf" type="application/pdf">
+            </div>
+            <a href="assets/pdf/JavaScript_Fundamentals_Setup_and_Storage.pdf" class="download-link" target="_blank">
+                Unable to view the PDF? Click here to download.
+            </a>
+        </div>
+
+        <section id="integration">
+            <h2>1.0 Integrating JavaScript</h2>
+            <p>Before code can execute, it must be added to an HTML document correctly. Placing scripts before the closing <code>&lt;/body&gt;</code> tag or using the <code>defer</code> attribute ensures non-blocking performance.</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Benefit</th>
+                        <th>Strategic Impact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Separation of Concerns</td>
+                        <td>Improves maintainability.</td>
+                    </tr>
+                    <tr>
+                        <td>Caching</td>
+                        <td>Speeds up multi-page websites.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="variables">
+            <h2>2.0 Variables and Data Types</h2>
+            <p>Variables are containers for data. Use <code>const</code> for fixed data and <code>let</code> for values that will change.</p>
+            
+            <div class="highlight-box">
+                <strong>Data Types:</strong> String (text), Number (math), Boolean (true/false), and Null (intentional absence).
+            </div>
+
+            <p>JavaScript is <strong>loosely-typed</strong>, providing flexibility by allowing variables to hold different data types over time.</p>
+        </section>
+
+        <section id="operations">
+            <h2>3.0 Essential Operations</h2>
+            <h3>String Methods</h3>
+            <p>Use <code>.toUpperCase()</code>, <code>.trim()</code>, and <code>.slice()</code> to manipulate text. Note that string methods return a <em>new</em> string rather than changing the original.</p>
+            
+            <h3>Math & Concatenation</h3>
+            <p>JavaScript follows standard mathematical precedence. For joining text, <strong>Template Literals</strong> using backticks (`) are the modern standard.</p>
+        </section>
+
+        <section id="principles">
+            <h2>4.0 Guiding Principles</h2>
+            <p>Adopt <code>camelCase</code> for variable naming and use <code>console.log()</code> as your primary debugging tool to inspect values in real-time.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 JavaScript Fundamentals Guide | Focused Learning</p>
+        </footer>
+    </div>
+
+</body>
+</html>

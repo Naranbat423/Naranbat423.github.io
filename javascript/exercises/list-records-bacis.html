@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listview</title>
+
+    <script src="list-records-bacis.js" defer></script>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- JS -->
+    <script src="list-listview.js" defer></script>
+</head>
+
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+
+<div class="w-full max-w-4xl p-6">
+
+    <h1 class="text-3xl font-bold text-center mb-6 text-blue-400">
+        Product List
+    </h1>
+
+    <!-- List Container -->
+    <div id="productList" class="rounded-xl overflow-hidden shadow-lg border border-gray-700">
+
+        <!-- Desktop Header Row -->
+        <div class="hidden md:grid grid-cols-4 bg-gray-800 text-gray-300 font-semibold p-4">
+            <div>Name</div>
+            <div>Price</div>
+            <div>Status</div>
+            <div>Action</div>
+        </div>
+
+        <!-- JS inserts rows here -->
+
+    </div>
+
+</div>
+
+</body>
+</html>
